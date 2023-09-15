@@ -1,7 +1,7 @@
 	
 class Math():
-	def __init__(self):
-		pass
+	def __init__(self, list):
+		self.list = list
 
 	def is_empty_array(self, arr):
 		if not arr:
@@ -25,8 +25,11 @@ class Math():
 
 def main():
 	b_list = [-1, 1]
-	math = Math()
+	math = Math(b_list)
+	print("在陣列中", math.list, "哪個最大？")
+
 	math.find_max(b_list)
+
 
 main()
 
